@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './atoms/navbar'
+import './App.css'
+import About from './pages/About/About'
+import Program from './pages/Program/Program'
+import Training from './pages/Training/Training'
+import Pricing from './pages/Pricing/Pricing'
+import {Link} from 'react-scroll'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Navbar/>  
+      <div className='homeimage'><div className='joinwithus'>Join With Us</div></div>
+      <About/>
+      <Program/>
+      <Training/>
+      <Pricing/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
