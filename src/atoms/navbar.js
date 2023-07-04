@@ -2,8 +2,15 @@ import React from 'react'
 import './navbar.css'
 import { FiMenu} from "react-icons/fi";
 import { useState } from 'react';
+import { Link } from 'react-scroll'
+import Price from '../pages/Price/Price';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const nevigate=useNavigate();
+  function handleClick(){
+    nevigate("/Register")
+  }
   const[toggle,settoggle]=useState(false)
   function togglefunction(){
     settoggle(!toggle)
@@ -16,18 +23,18 @@ const Navbar = () => {
     
     }
     
-<div className='gym'> GYM
-</div><div className='sections'>
-<span className='section'>  ABOUT
-</span>
-<span  className='section'>PROGRAM
-</span>
-<span  className='section'>TRAINING
-</span>
-<span  className='section'>PRICING
-</span>
+<Link to='Pricing' className='gym'> GYM
+</Link ><div className='sections'>
+<Link to='About' className='section'>  ABOUT
+</Link>
+<Link to='Training' className='section'>PROGRAM
+</Link>
+<Link to='Training' className='section'>TRAINING
+</Link>
+<Link  to='Price' className='section'>PRICING
+</Link>
 </div>
-<div className='joinus'> <div className='joinusbutton' > Join Us </div></div>
+<div className='joinus'> <div className='joinusbutton' onClick={handleClick} > Join Us </div></div>
     
     </div>
   )

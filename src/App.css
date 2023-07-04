@@ -1,27 +1,8 @@
 .App {
   text-align: center;
 }
-.homeimage {
-  height: 92.6vh;
-  width: 100vw;
-  background-image:  url(https://i.pinimg.com/originals/a2/49/67/a249670f787ab5a3c4adc86c0a5a485e.jpg);
-}
-.joinwithus{
- height: 40px;
- border: 5px solid red;
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100px;
- color: white;
- background: red;
- border-radius: 10px;
- position: absolute;
- bottom: 5vh;
- left: 250px;
 
 
-}
 
 .App-logo {
   height: 40vmin;

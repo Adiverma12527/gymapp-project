@@ -1,5 +1,116 @@
 .About{
-    height: 100vh;
-    width: 100vw;
-    background-color: aqua;
+    height: 98vh;
+    width: 99vw;
+    background-color: aquaz;
 }
+.aboutus{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+    width: 100%;
+    
+}
+.youtube{
+    width: 40%;
+    height: 90%;
+   
+}
+.para{
+    
+    width: 40%;
+    height: 90%;
+    display: block;
+}
+.learnnow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 5px solid red;
+    background-color: red;
+    height: 35px;
+    width: 20%;
+    border-radius: 10px;
+
+}
+.whychooseus{
+   
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.paragraph{
+    height: 90%;
+    width: 40%;
+   
+}
+.video{
+    height: 90%;
+    width: 40%;
+
+}
+.span{
+    color: red;
+    font-size: xx-large;
+}
+.headings{
+    color: red;
+}
+.span{
+    color: red;
+    height: 5px;
+    width: 5px;
+    border: 5px solid red;
+    background-color: red;
+    border-radius: 50%;
+}
+.h3{
+    display: flex;
+}
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .aboutus {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .youtube {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .para {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .learnnow {
+      width: 60%;
+    }
+  
+    .whychooseus {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .paragraph {
+      width: 100%;
+    }
+  
+    .video {
+      width: 100%;
+    }
+    
+    .paragraph2{
+        display: none;
+    }
+    .paragraph3{
+        display: none;
+    }
+    .paragraph1{
+        display: none;
+    }
+  }

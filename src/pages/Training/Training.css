@@ -1,5 +1,43 @@
 .Training{
-    height: 100vh;
-    width: 100vw;
-    background-color: blue;
+    height: 98vh;
+    width: 99vw;
+    background-color: black;
+    display: block;
+    align-items: center;
+   
 }
+.h2{ color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+   
+}
+.scrolling{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+.scrolling::-webkit-scrollbar {
+    display: none;
+  }
+  .pi{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 767px) {
+    .scrolling {
+      flex-direction: column;
+    }
+    
+    .pi {
+      display: none;
+    }
+    
+    .scrolling > div:not(:first-child) {
+      display: none;
+    }
+  }
